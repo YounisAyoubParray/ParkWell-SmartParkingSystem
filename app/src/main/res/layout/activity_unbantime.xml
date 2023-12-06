@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Unbantime">
+
+    <TextView
+        android:id="@+id/textView571"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#014077"
+        android:gravity="center"
+        android:text="Reinstate the Car"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView631"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Vehcile Number:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/banedetet1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/banedetet1" />
+
+    <EditText
+        android:id="@+id/banedetet1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView631"
+        app:layout_constraintTop_toBottomOf="@+id/textView571" />
+
+    <Button
+        android:id="@+id/button71"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:stateListAnimator="@null"
+        android:text="Get Details"
+        android:translationZ="5dp"
+        app:backgroundTint="@color/skybluecolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <Button
+        android:id="@+id/Paytheunbanfee"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:elevation="5dp"
+        android:stateListAnimator="@null"
+        android:text="Pay"
+        android:translationZ="5dp"
+        app:backgroundTint="@color/skybluecolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider37" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Total Fine:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView631"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Restriction date:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView631"
+        app:layout_constraintTop_toBottomOf="@+id/divider35" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Your offence count:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Na"
+        android:textColor="#131313"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/divider35" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Na"
+        android:textColor="#131313"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Na"
+        android:textColor="#131313"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView77"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="After breaching the max offence count you have to contact parking management for reinstating the vehicle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button71" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTE:"
+        android:textColor="#131313"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView83"
+        app:layout_constraintStart_toStartOf="@+id/textView83" />
+
+    <View
+        android:id="@+id/divider35"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/banedetet1"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider36"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <View
+        android:id="@+id/divider37"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:padding="5dp"
+    tools:context=".viewbookings">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/helow"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/textviewborder"
+                    android:padding="5dp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vtvsmartparking" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bookingbuttons"
+                    app:backgroundTint="@color/skybluecolor"
+                    android:text="Select Date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/textviewborder"
+                    android:padding="5dp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <EditText
+                    style=""
+                    android:id="@+id/edinvoice"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textviewborder"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bookingbuttons"
+                    app:backgroundTint="@color/skybluecolor"
+                    android:text="Confirm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edinvoice" />
+
+
+                <TextView
+                    android:id="@+id/vtvsmartparking"
+                    android:layout_width="412dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/share_tech"
+                    android:paddingTop="3dp"
+                    android:text="ParkWell"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0025F0"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="230dp"
+                    android:text="PARKING NAME"
+                    app:layout_constraintBottom_toTopOf="@+id/textView34"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_marginEnd="230dp"
+                    android:text="DATE"
+                    app:layout_constraintBottom_toTopOf="@+id/textView35"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="230dp"
+                    android:text="INVOICE"
+                    app:layout_constraintBottom_toTopOf="@+id/edinvoice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

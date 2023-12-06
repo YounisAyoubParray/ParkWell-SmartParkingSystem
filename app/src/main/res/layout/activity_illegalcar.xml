@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Illegalcar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#242775"
+            android:gravity="center"
+            android:text="Illegal Occupants"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="133dp" />
+
+
+        <TextView
+            android:id="@+id/textView7f6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:text="Total Illegal Occupants:"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <TextView
+            android:id="@+id/textView7m3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Na"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/textView7f6"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <EditText
+            android:id="@+id/donmess"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/searchtv"
+            android:drawableTint="@color/adminclr"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BEE3E3E3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7f6" />
+
+        <ImageView
+            android:id="@+id/imageedView5"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/imagesearchtv"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@+id/donmess"
+            app:layout_constraintTop_toTopOf="@+id/donmess"
+            app:srcCompat="@drawable/icsearch24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

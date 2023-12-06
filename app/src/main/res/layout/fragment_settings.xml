@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidappbackgroundwhite"
+    tools:context=".settings">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider33"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logbutout" />
+
+
+            <TextView
+                android:id="@+id/chgemail"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rippleeffect"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="Change Email "
+                android:textColor="#1F1C47"
+                android:textSize="18sp"
+                app:drawableTint="#1F1C47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chgepass"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/rippleeffect"
+                android:drawableStart="@drawable/ic_baseline_lock_reset_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="Change Password"
+                android:textColor="#1F1C47"
+                android:textSize="18sp"
+                app:drawableTint="#1F1C47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider27" />
+
+            <TextView
+                android:id="@+id/delaccount"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/rippleeffect"
+                android:drawableStart="@drawable/ic_baseline_delete_forever_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="Delete Account"
+                android:textColor="#BA0000"
+                android:textSize="18sp"
+                app:drawableTint="#BA0000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider28" />
+
+            <TextView
+                android:id="@+id/logbutout"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/rippleeffect"
+                android:drawableStart="@drawable/ic_baseline_logout_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="Logout"
+                android:textColor="#014077"
+                android:textSize="18sp"
+                app:drawableTint="#014077"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider32" />
+
+            <View
+                android:id="@+id/divider27"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chgemail" />
+
+            <View
+                android:id="@+id/divider28"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chgepass" />
+
+            <View
+                android:id="@+id/divider32"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/delaccount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

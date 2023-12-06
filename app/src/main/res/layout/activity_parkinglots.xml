@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".parkinglots">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:elevation="10dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
+        android:background="#EDEDED">
+
+        <EditText
+            android:id="@+id/editsearch"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/textviewborder"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/cursorlogin"
+            android:hint="@android:string/search_go"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/parkdistwicho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:stateListAnimator="@null"
+            android:text="Show Parking Distance"
+            android:translationZ="5dp"
+            app:backgroundTint="@color/skybluecolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editsearch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1231"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:background="#FFFFFF"
+            android:layoutAnimation="@anim/recycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".srinagar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginVertical="0dp"
+            android:background="#EDEDED">
+
+
+                <TextView
+                    android:id="@+id/srinagar45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/share_tech"
+                    android:padding="1dp"
+                    android:text=" PARKING"
+                    android:textColor="#0025F0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="#EDEDED"
+                    android:text="Total Available Slots:"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/availablesearch"
+                    app:layout_constraintEnd_toStartOf="@+id/totalslotsavailable"
+                    app:layout_constraintStart_toStartOf="@+id/availablesearch" />
+
+                <TextView
+                    android:id="@+id/totalslotsavailable"
+                    android:layout_width="34dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="#EDEDED"
+                    android:text="NA"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/availablesearch"
+                    app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/availablesearch"
+                    android:layout_width="365dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/textviewborder"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:drawableTint="@color/cursorlogin"
+                    android:gravity="center_vertical"
+                    android:hint="Search"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="155dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:textAlignment="center"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED">
+
+            <TextView
+                android:id="@+id/tvsmartparking2"
+                android:layout_width="412dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/share_tech"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="ParkWell"
+                android:textAlignment="center"
+                android:textColor="#1921EC"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/rname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cuspers"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <EditText
+                android:id="@+id/remail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cusemail"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rname" />
+
+            <EditText
+                android:id="@+id/rphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cusphone"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/remail" />
+
+            <EditText
+                android:id="@+id/raddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cushome"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rphone" />
+
+            <EditText
+                android:id="@+id/rpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cuspass"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raddress" />
+
+            <Button
+                android:id="@+id/rregister"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_button"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="@color/bluecolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rrrpassword" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="35dp"
+                android:text="Create Account"
+                android:textColor="#014077"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/rname"
+                app:layout_constraintTop_toBottomOf="@+id/tvsmartparking2" />
+
+            <EditText
+                android:id="@+id/rrrpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ogtv"
+                android:drawableStart="@drawable/cuspass"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rpassword" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imagundless" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

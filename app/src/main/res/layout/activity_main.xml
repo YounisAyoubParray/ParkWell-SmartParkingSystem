@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackg"
+    android:paddingStart="5dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/loginep"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvsmartparking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="106dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="106dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/share_tech"
+                    android:gravity="center"
+                    android:text="ParkWell "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#1921EC"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView38"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/InputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Email"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#014077"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#014077"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39"
+                    app:startIconDrawable="@drawable/cusemail"
+                    app:startIconTint="@color/cursorlogin"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/teemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/InputLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Password"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#014077"
+                    app:hintTextColor="#014077"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/InputLayout"
+                    app:passwordToggleDrawable="@drawable/customeye"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/cursorlogin"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    app:startIconTint="@color/cursorlogin"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textPassword"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/logbut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Login"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bluecolor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvforgotpassword" />
+
+
+                <TextView
+                    android:id="@+id/tvforgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Forgot Password?"
+                    android:textAlignment="center"
+                    android:textColor="#014077"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/InputLayout2" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textColor="#014077"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvsmartparking" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="Please Sign in to continue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Don't have an account?"
+                    android:textColor="#888585"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/logbut"
+                    app:layout_constraintTop_toBottomOf="@+id/logbut" />
+
+                <TextView
+                    android:id="@+id/tvregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Create now"
+                    android:textAlignment="center"
+                    android:textColor="#014077"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView37"
+                    app:layout_constraintTop_toBottomOf="@+id/logbut" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".editaddress">
+
+    <TextView
+        android:id="@+id/tvsmartparking132"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="106dp"
+        android:background="#EDEDED"
+        android:fontFamily="@font/share_tech"
+        android:gravity="center_vertical"
+        android:paddingTop="3dp"
+        android:text="ParkWell"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0025F0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tick2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsmartparking132"
+        app:srcCompat="@drawable/iccheckcircle" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:paddingStart="55dp"
+        android:paddingTop="10dp"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tick2"
+        app:layout_constraintStart_toEndOf="@+id/cross2"
+        app:layout_constraintTop_toBottomOf="@+id/tvsmartparking132" />
+
+    <ImageView
+        android:id="@+id/cross2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsmartparking132"
+        app:srcCompat="@drawable/icclose" />
+
+    <EditText
+        android:id="@+id/addresschange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tick2"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

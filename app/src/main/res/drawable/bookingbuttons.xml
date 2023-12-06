@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="@color/buut">
+<item>
+    <shape>
+        <solid android:color="#45C0F8"
+            />
+        <corners android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:topRightRadius="10dp"
+            android:radius="10dp"
+            />
+    </shape>
+</item>
+
+</ripple>

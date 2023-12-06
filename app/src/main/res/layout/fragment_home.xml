@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidappbackgroundwhite"
+    tools:context=".home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reportts"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/mainscreentv"
+                    android:drawableTop="@drawable/csdraw"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:forceDarkAllowed="false"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="30dp"
+                    android:text="Change Slot"
+                    android:textColor="@drawable/homeusertextbuttons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/divider24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider2"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+
+                <TextView
+                    android:id="@+id/dir"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/mainscreentv"
+                    android:drawableTop="@drawable/dirdraw"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:forceDarkAllowed="false"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="30dp"
+                    android:text="Parking Location"
+                    android:textColor="@drawable/homeusertextbuttons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/divider24"
+                    app:layout_constraintEnd_toStartOf="@+id/divider2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/book"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/mainscreentv"
+                    android:drawableTop="@drawable/homedraw"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:forceDarkAllowed="false"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="30dp"
+                    android:text="Booking"
+                    android:textColor="@drawable/homeusertextbuttons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/divider3"
+                    app:layout_constraintEnd_toStartOf="@+id/divider2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <TextView
+                    android:id="@+id/myprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:forceDarkAllowed="false"
+                    android:text="My Profile"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <View
+                    android:id="@+id/divider34"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="196dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider24" />
+
+                <View
+                    android:id="@+id/divider24"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="196dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <TextView
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/mainscreentv"
+                    android:drawableTop="@drawable/viewdraw"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:forceDarkAllowed="false"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="30dp"
+                    android:text="View Bookings"
+                    android:textColor="@drawable/homeusertextbuttons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/divider3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider2"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="196dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="31dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myprofile" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:forceDarkAllowed="false"
+                    app:layout_constraintStart_toStartOf="@+id/book"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    app:srcCompat="@drawable/account"
+                    app:strokeColor="#AC0D0D" />
+
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Welcome"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/date44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/unbook"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/mainscreentv"
+                    android:drawableTop="@drawable/ubdraw"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:forceDarkAllowed="false"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="30dp"
+                    android:text="Reinstate Vehicle"
+                    android:textColor="@drawable/homeusertextbuttons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/divider34"
+                    app:layout_constraintEnd_toEndOf="@+id/dir"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider24" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Relocation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6331"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:text="Your slot is occupied by vehcile number:"
+            android:textColor="#131313"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8333" />
+
+        <EditText
+            android:id="@+id/banedetet1145"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:ems="10"
+            android:inputType="textCapCharacters"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6331" />
+
+        <TextView
+            android:id="@+id/textView571t"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="#014077"
+            android:gravity="center"
+            android:text="Relocate the Slot"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView8333"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="20dp"
+            android:text="You can only relocate the slot if the slot you booked is occupied by some other car."
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+        <TextView
+            android:id="@+id/textView8334"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTE:"
+            android:textColor="#131313"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView86"
+            app:layout_constraintStart_toStartOf="@+id/textView8333" />
+
+        <View
+            android:id="@+id/divider20"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banedetet1145" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the slot number you booked:"
+            android:textColor="#131313"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/slotkikhabar"
+            app:layout_constraintEnd_toStartOf="@+id/slotkikhabar"
+            app:layout_constraintStart_toStartOf="@+id/textView6331"
+            app:layout_constraintTop_toTopOf="@+id/slotkikhabar" />
+
+        <EditText
+            android:id="@+id/slotkikhabar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:digits="1234567890"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/banedetet1145"
+            app:layout_constraintStart_toEndOf="@+id/textView85"
+            app:layout_constraintTop_toBottomOf="@+id/textView571t" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="relocate"
+            app:backgroundTint="@color/skybluecolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:text="You must be logged in from the account  which was used for booking the slot to relocate."
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slotkikhabar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

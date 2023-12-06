@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth</item>
+        <item>@font/annie_use_your_telescope</item>
+        <item>@font/arima_madurai_bold</item>
+        <item>@font/arima_madurai_medium</item>
+        <item>@font/arima_madurai_thin</item>
+        <item>@font/b612_mono_bold_italic</item>
+        <item>@font/bai_jamjuree_bold</item>
+        <item>@font/eagle_lake</item>
+        <item>@font/original_surfer</item>
+        <item>@font/share_tech</item>
+        <item>@font/vampiro_one</item>
+    </array>
+</resources>
